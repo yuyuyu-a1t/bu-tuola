@@ -1055,11 +1055,10 @@ class _AddTaskBottomSheetState extends State<_AddTaskBottomSheet> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: const BoxDecoration(
-        color: _white,
-        borderRadius: BorderRadius.vertical(top: Radius.circular(28)),
-      ),
+    return Material(
+      color: _white,
+      borderRadius: const BorderRadius.vertical(top: Radius.circular(28)),
+      clipBehavior: Clip.antiAlias,
       child: SafeArea(
         top: false,
         child: SingleChildScrollView(
